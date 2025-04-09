@@ -104,14 +104,3 @@ pub trait EcdsaVerify: ErrorType {
     ) -> Result<(), Self::Error>;
 }
 
-pub trait EcdsaKeyAgreement : ErrorType {
-    type PrivateKey;
-    type PublicKey;
-    type Curve: EcdsaCurve;
-
-    fn derive_shared_secret(
-        curve: &Self::Curve,
-        private_key: &Self::PrivateKey,
-        peer_public_key: &Self::PublicKey,
-    ) -> Result<Vec<u8>, Self::Error>;
-}
