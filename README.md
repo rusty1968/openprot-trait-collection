@@ -1,2 +1,5 @@
 # openprot-trait-collection
-A selection of embedded traits 
+A discussion of the selection of embedded traits for OpenPRoT.
+
+
+
