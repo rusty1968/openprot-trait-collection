@@ -2,7 +2,17 @@
 resolver = "2"
 
 members = [
+    "drivers",
     "peripherals",
+    "simulation",
 ]
 
 [workspace.dependencies]
+embedded-hal = "1.0.0"
+embedded-hal-nb = "1"
+embedded-hal-bus = "0.3.0"
+embedded-hal-async = "1"
+rand = "0.8"
+
+
+drivers = { path = "drivers" }
